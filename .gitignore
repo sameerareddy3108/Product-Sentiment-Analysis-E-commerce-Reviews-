@@ -3,6 +3,9 @@
 # Ignore virtual environment folder
 Product_Review_Analysis/
 
+# Streamlit cache
+.streamlit/
+
 # Ignore other Python related files
 __pycache__/
 *.py[cod]
