@@ -1,76 +1,69 @@
-# Product Review Sentiment Analysis
+# 🛍️ AI-Powered Product Review Sentiment Analysis
 
-The goal of this project is to analyze customer reviews to determine their sentiment—positive, negative, or neutral—based on the text content of the reviews and associated metadata. This analysis helps to understand customer feedback, identify product strengths and weaknesses, and improve the overall customer experience by providing actionable insights.
+An NLP-based Machine Learning application that analyzes customer product reviews and predicts sentiment using multiple machine learning models.
 
-If you find this project useful, please consider giving it a star ⭐ on GitHub. Contributions are also welcome!
-
-![alt text](<Screenshot (130).png>)
-
-## Table of Contents
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-### Technologies Used
+Built using:
 - Python
-- Streamlit
 - Scikit-learn
-- NLTK
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+- Streamlit
+- Natural Language Processing (NLP)
 
-### Installation
+---
 
-To set up the project, follow these steps:
+# 🚀 Live Demo
+
+[Streamlit App](YOUR_STREAMLIT_LINK_HERE)
+
+---
+
+# 📌 Project Overview
+
+This project performs sentiment analysis on Amazon product reviews using Natural Language Processing and Machine Learning techniques.
+
+The application:
+- Cleans and preprocesses review text
+- Converts text into numerical features using TF-IDF Vectorization
+- Trains multiple machine learning models
+- Predicts sentiment of user-entered reviews
+- Visualizes sentiment insights through charts and word clouds
+- Deploys an interactive web dashboard using Streamlit
+
+---
+
+# ✨ Features
+
+✅ Sentiment prediction for customer reviews  
+✅ Interactive Streamlit dashboard  
+✅ TF-IDF text vectorization  
+✅ Multiple ML model comparison  
+✅ Word cloud visualization  
+✅ Sentiment distribution charts  
+✅ Dark theme support  
+✅ Deployment-ready application  
+
+---
+
+# 🧠 Machine Learning Models Used
+
+| Model | Accuracy |
+|------|------|
+| Logistic Regression | 91% |
+| Naive Bayes | 87% |
+| Linear SVM | 92% |
+
+---
+
+# 📂 Project Structure
 
 ```bash
-# Clone the repository
-git clone https://github.com/yourusername/Product-Review-Sentiment-Analysis.git
-
-# Navigate into the project directory
-cd Product-Review-Sentiment-Analysis
-
-# Create a virtual environment
-python -m venv Product_Review_Analysis
-
-# Activate the virtual environment
-# On Windows
-Product_Review_Analysis\Scripts\activate
-# On macOS/Linux
-source Product_Review_Analysis/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
-### Usage
-After setting up the project, you can run the Streamlit app with the following command:
-```bash
-streamlit run app.py
-```
-This will launch the application in your web browser, where you can input reviews and visualise sentiment analysis results.
-
-### Features
-- Sentiment classification of reviews (positive, negative, neutral)
-- Visualisation of sentiment distribution across different product categories
-- Real-time sentiment prediction for user-input reviews
-- Interactive dashboard for exploring customer feedback
-
-### Contributing
-Contributions are welcome! Please read the contributing guidelines for details on how to contribute.
-```bash
-- Fork the repository.
-- Create a new feature branch (git checkout -b feature-name).
-- Commit your changes (git commit -m 'Add some feature').
-- Push to the branch (git push origin feature-name).
-- Open a pull request.
-```
-### License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-### Contact
-For any inquiries or feedback please contact me at https://nafisalawalidris.github.io/13/.
+Product-Review-Sentiment-Analysis/
+│
+├── sentiment_dashboard.py
+├── Product_Review_Analysis.ipynb
+├── sentiment_model.pkl
+├── vectorizer.pkl
+├── requirements.txt
+├── Amazon Product Review.txt
+├── .streamlit/
+│   └── config.toml
+└── README.md
